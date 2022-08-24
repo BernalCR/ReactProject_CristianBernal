@@ -1,0 +1,6 @@
+#pageBody{
+    height: calc(100vh - 92px); /* la altura del viewport menos la altura del Navbar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

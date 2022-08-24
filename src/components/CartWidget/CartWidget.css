@@ -1,0 +1,8 @@
+#cartIcon{
+    font-size: 1.3rem;
+    margin-right: 1rem;
+}
+
+#cartIcon path:last-child{
+    fill: #fff;
+}
