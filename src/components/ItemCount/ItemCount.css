@@ -1,0 +1,45 @@
+p{
+    margin: 0;
+}
+
+.card_product{
+    box-shadow: 0px 2px 4px 0px #d2d0e48a;
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.img_card{
+    width: 90%;
+    margin: 0.5em auto 0.5em;
+    display: block;
+}
+
+.boxBtns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.boxBtns button{
+    width: 2rem;
+    height: 2rem;
+    color: #fff;
+    border: 1p solid;
+    cursor: pointer;
+}
+
+.addBtn{
+    background-color: green;
+    margin-right: 1rem;
+}
+
+.removeBtn{
+    background-color: red;
+    margin-left: 1rem;
+}
