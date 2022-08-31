@@ -1,6 +1,14 @@
-#pageBody{
-    height: calc(100vh - 92px); /* la altura del viewport menos la altura del Navbar */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#productsBox{
+    display: grid;
+    gap: 1.5em;
+    grid-template-columns: repeat(4, 1fr);
+    width: 90%;
+    margin: auto;
+    padding: 3em 0;
+}
+
+@media screen and (max-width: 900px) {
+    #productsBox{
+        grid-template-columns: repeat(2, 1fr); 
+    }
 }

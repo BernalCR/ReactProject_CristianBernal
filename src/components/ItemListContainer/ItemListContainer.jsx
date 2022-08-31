@@ -1,11 +1,11 @@
 import './ItemListContainer.css'
-import ItemCount from '../ItemCount/ItemCount';
+import ItemList from './ItemList';
 
 const ItemListContainer = () => {    
     
     return (
-        <div id='pageBody'>
-            <ItemCount stock={10} name="Pinarello Prince Fx" price="5000$"/>
+        <div id="productsBox">
+            <ItemList />
         </div>
     );
 }

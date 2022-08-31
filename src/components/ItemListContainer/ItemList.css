@@ -1,0 +1,19 @@
+p{
+    margin: 0;
+}
+
+.card_product{
+    box-shadow: 0px 2px 4px 0px #d2d0e48a;
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.img_card{
+    width: 90%;
+    margin: 0.5em auto 0.5em;
+    display: block;
+}
