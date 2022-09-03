@@ -2,6 +2,15 @@ p{
     margin: 0;
 }
 
+#productsBox{
+    display: grid;
+    gap: 1.5em;
+    grid-template-columns: repeat(4, 1fr);
+    width: 90%;
+    margin: auto;
+    padding: 3em 0;
+}
+
 .card_product{
     box-shadow: 0px 2px 4px 0px #d2d0e48a;
     background-color: #fff;
@@ -16,4 +25,11 @@ p{
     width: 90%;
     margin: 0.5em auto 0.5em;
     display: block;
+}
+
+
+@media screen and (max-width: 900px) {
+    #productsBox{
+        grid-template-columns: repeat(2, 1fr); 
+    }
 }

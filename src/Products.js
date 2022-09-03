@@ -1,5 +1,6 @@
-const Items = [
+const Products = [
     {
+        id: 1,
         name: "Pinarello Prince Fx", 
         price: "5000$", 
         stock: "10", 
@@ -9,6 +10,7 @@ const Items = [
         }
     },
     {
+        id: 2,
         name: "Willier Triestina Montegrappa", 
         price: "1300$", 
         stock: "10", 
@@ -18,6 +20,7 @@ const Items = [
         }
     },
     {
+        id: 3,
         name: "Specialiced Roubaix", 
         price: "3000$", 
         stock: "10", 
@@ -27,6 +30,7 @@ const Items = [
         }
     },
     {
+        id: 4,
         name: "Specialiced Allez Sport", 
         price: "1500$", 
         stock: "10", 
@@ -37,4 +41,4 @@ const Items = [
     },
 ]
 
-export default Items;
+export default Products;
