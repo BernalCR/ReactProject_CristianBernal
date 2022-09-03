@@ -27,6 +27,16 @@ p{
     display: block;
 }
 
+.card_product button{
+    margin: auto;
+    display: block;
+    border: none;
+    font-size: 0.9rem;
+    padding: 0.4rem 1rem;
+    margin-top: 1.2rem;
+    background-color: #7f7f7f;
+    color: #fff;
+}
 
 @media screen and (max-width: 900px) {
     #productsBox{

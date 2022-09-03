@@ -1,6 +1,6 @@
-import ItemCount from '../ItemCount/ItemCount';
 const Item = ({product}) => {
-    const {id, name, price, image, stock} = product;
+    
+    const {id, name, price, stock, image} = product;
     return (
         <div className="card_product" id={id}>
             <img className="img_card" src={image.src} alt={image.alt}/>
@@ -8,8 +8,7 @@ const Item = ({product}) => {
                 <p>{name}</p>
                 <p>price: {price}</p>
                 <p>Stock: {stock}</p>
-        
-                <ItemCount stock={stock}/>
+                <button>VIEW DETAILS</button>
             </div>  
         </div> 
     );

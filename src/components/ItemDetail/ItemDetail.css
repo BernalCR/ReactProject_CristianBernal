@@ -1,0 +1,12 @@
+#ecommRow{
+    width: 90%;
+    margin: auto;
+}
+
+#ecommRow > div{
+    width: 50%;
+}
+
+#ecommRow img{
+    width: clamp(20rem, 30vw, 30rem);
+}
