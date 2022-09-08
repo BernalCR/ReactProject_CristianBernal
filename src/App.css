@@ -6,3 +6,11 @@
     justify-content: center;
     align-items: center;
 }
+
+.j_c_center{
+    justify-content: center;
+}
+
+.a_i_center{
+    align-items: center;
+}

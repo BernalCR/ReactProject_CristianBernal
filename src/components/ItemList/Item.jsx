@@ -1,14 +1,15 @@
+import { Link } from "react-router-dom";
 const Item = ({product}) => {
     
-    const {id, name, price, stock, image} = product;
+    const {id, name, category, price, stock, image} = product;
     return (
         <div className="card_product" id={id}>
-            <img className="img_card" src={image.src} alt={image.alt}/>
+            <img className="img_card" src={`../images/${image.src}`} alt={image.alt}/>
             <div>
                 <p>{name}</p>
+                <p>{category}</p>
                 <p>price: {price}</p>
-                <p>Stock: {stock}</p>
-                <button>VIEW DETAILS</button>
+                <Link to={`/item/${id}`} style={{textDecoration: "none"}}><button>VIEW DETAILS</button></Link>
             </div>  
         </div> 
     );

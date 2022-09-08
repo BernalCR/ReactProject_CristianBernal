@@ -1,25 +1,35 @@
 import { React, useState, useEffect } from 'react'
+import { useParams } from 'react-router-dom';
 import ItemList from '../ItemList/ItemList';
 import Products from '../../Products';
+import Loader from '../Loader/Loader';
 
-const ItemListContainer = () => {    
-    const getProducts = access => new Promise ((res,rej) => access ? res(Products) : rej("Acceso denegado"));  
+
+
+const ItemListContainer = () => { 
+    const [prodList, setProdList] = useState([]); 
+    const {category} = useParams(); 
+
+    const getProducts = () => new Promise ((res,rej) => {
+        if(category){
+            setTimeout(() =>res(Products.filter(product => product.category.toLowerCase() == category)), 2000);  
+        }else{
+            setTimeout(() => res(Products), 2000);
+        }
+        
+    });
       
-    const [prodList, setProdList] = useState([])
+    
     useEffect(() => {
-        getProducts(true)
-        .then(data => {
-            setProdList(data)
-        })
-        .catch(error => {
-            console.error(error)
-        })
-    }, []);
+        getProducts()
+        .then(data => setProdList(data))
+        .catch(error => console.error(error))
+
+        return () =>{setProdList([])}
+    }, [category]);
     
 
-    return (
-        <ItemList prodList={prodList} />
-    );
+    return (prodList.length ? <ItemList prodList={prodList} /> : <Loader/>)
 }
 
 export default ItemListContainer;

@@ -21,6 +21,14 @@ p{
     justify-content: space-between;
 }
 
+.card_product > div p:first-child{
+    font-weight: bold;
+    color: #000;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
 .img_card{
     width: 90%;
     margin: 0.5em auto 0.5em;
@@ -36,6 +44,11 @@ p{
     margin-top: 1.2rem;
     background-color: #7f7f7f;
     color: #fff;
+    transition: background-color .2s ease-in-out;
+}
+
+.card_product button:hover{
+    background-color: #535353;
 }
 
 @media screen and (max-width: 900px) {
