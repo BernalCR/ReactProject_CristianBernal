@@ -35,19 +35,23 @@ p{
     display: block;
 }
 
-.card_product button{
-    margin: auto;
+.detailsBtn{
+    min-width: 9rem;
+    width: fit-content;
     display: block;
+    margin: auto;
     border: none;
     font-size: 0.9rem;
     padding: 0.4rem 1rem;
     margin-top: 1.2rem;
     background-color: #7f7f7f;
-    color: #fff;
+    color: #fff !important;
     transition: background-color .2s ease-in-out;
+    text-decoration: none;
+    text-align: center;
 }
 
-.card_product button:hover{
+.detailsBtn:hover{
     background-color: #535353;
 }
 
