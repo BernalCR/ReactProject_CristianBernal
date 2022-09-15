@@ -4,19 +4,19 @@ const UseCount = (stock) => {
 
     const [count, setCount] = useState(0)
 
-    const addProduct = () =>{
+    const add = () =>{
         if(count < stock){
             setCount(count + 1 )
         }
     }
 
-    const removeProduct = () =>{
+    const remove = () =>{
         if(count > 0){
             setCount(count - 1 )
         }
     }
 
-    return {addProduct, removeProduct, count}
+    return {add, remove, count}
 }
 
 export default UseCount;

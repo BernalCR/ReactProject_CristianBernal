@@ -2,12 +2,13 @@ import './ItemCount.css'
 import UseCount from './useCount';
 
 const ItemCount = ({stock}) => {
-    const {addProduct, removeProduct, count} = UseCount(stock);
+    const {add, remove, count} = UseCount(stock);
+    console.log("paso")
     return (
         <div className='boxBtns'>
-            <button className="addBtn" onClick={addProduct}>+</button>
+            <button className="addBtn" onClick={add}>+</button>
             <p>{count}</p>
-            <button className="removeBtn" onClick={removeProduct}>-</button>
+            <button className="removeBtn" onClick={remove}>-</button>
         </div>
     );
 }
