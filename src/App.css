@@ -11,6 +11,14 @@
     justify-content: center;
 }
 
+.j_c_space_between{
+    justify-content: space-between;
+}
+
 .a_i_center{
     align-items: center;
+}
+
+.a_i_flex_start{
+    align-items: flex-start;
 }

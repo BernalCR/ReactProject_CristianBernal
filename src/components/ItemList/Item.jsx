@@ -8,7 +8,7 @@ const Item = ({product}) => {
             <div>
                 <p>{name}</p>
                 <p>{category}</p>
-                <p>price: {price}</p>
+                <p>price: {price}$</p>
                 <Link to={`/item/${id}`} className="detailsBtn">VIEW DETAILS</Link>
             </div>  
         </div> 

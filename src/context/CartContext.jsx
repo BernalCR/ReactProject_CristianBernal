@@ -4,9 +4,9 @@ import React, {createContext, useState} from 'react';
 export const CartContext = createContext();
 
 const CartProvider = ({ children }) =>{
-    const [cart, setCart] = useState([]);
+    const [cart, setCart] = useState([    ]);
 
-    const addP = (product, cant) =>{
+    const addItem = (product, cant) =>{
         const pFound = cart.find(item => item.id == product.id);
 
         if(pFound){
@@ -15,20 +15,23 @@ const CartProvider = ({ children }) =>{
             setCart([...cart])
         }else{
             console.log("no estaba")
-            const productCart = {id: product.id, cant: cant}
-            setCart([...cart, productCart])
+            let pToCart = {...product, cant: cant}
+            delete pToCart.stock;
+            delete pToCart.description;
+            setCart([...cart, pToCart])
         }
     }
-    console.log(cart);
- /*   const removeP = (id) =>{
 
+    const removeItem = (id) =>{
+        const newCart = cart.filter(item => item.id != id)
+        setCart(newCart)
     }
-    const clearCart = () =>{
+    const clear = () =>{
+        setCart([])
+    }
 
-    }
-*/
     return (
-        <CartContext.Provider value={{addP}}>
+        <CartContext.Provider value={{cart, addItem, removeItem, clear}}>
             {children}
         </CartContext.Provider>
     );

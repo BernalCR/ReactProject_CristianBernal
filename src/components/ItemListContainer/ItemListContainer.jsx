@@ -12,9 +12,9 @@ const ItemListContainer = () => {
 
     const getProducts = () => new Promise ((res,rej) => {
         if(category){
-            setTimeout(() =>res(Products.filter(product => product.category.toLowerCase() == category)), 2000);  
+            setTimeout(() =>res(Products.filter(product => product.category.toLowerCase() == category)), 1000);  
         }else{
-            setTimeout(() => res(Products), 2000);
+            setTimeout(() => res(Products), 1000);
         }
         
     });

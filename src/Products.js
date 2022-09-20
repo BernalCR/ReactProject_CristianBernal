@@ -3,7 +3,7 @@ const Products = [
         id: 1,
         name: `Pinarello Prince Fx`,
         category: "Road",
-        price: "5000$", 
+        price: "5000", 
         stock: "10", 
         image:{
             src: 'PinarelloPrinceFx_ecomm.jpg',
@@ -15,7 +15,7 @@ const Products = [
         id: 2,
         name: "Willier Triestina Montegrappa",
         category: "Road",
-        price: "1300$", 
+        price: "1300", 
         stock: "10", 
         image:{
             src: 'montegrappa_ecomm.jpg',
@@ -27,7 +27,7 @@ const Products = [
         id: 3,
         name: "Specialiced Roubaix",
         category: "Road",
-        price: "3000$", 
+        price: "3000", 
         stock: "10", 
         image:{
             src: 'Roubaix_ecomm.jpg',
@@ -39,7 +39,7 @@ const Products = [
         id: 4,
         name: "Specialiced Allez Sport",
         category: "Road",
-        price: "1500$", 
+        price: "1500", 
         stock: "10", 
         image:{
             src: 'AllezSport_ecomm.jpg',
@@ -51,7 +51,7 @@ const Products = [
         id: 5,
         name: "Cliff Rock 3.0",
         category: "Mountain",
-        price: "1000$", 
+        price: "1000", 
         stock: "10", 
         image:{
             src: 'rock-3_ecomm.jpg',
@@ -63,7 +63,7 @@ const Products = [
         id: 6,
         name: "Specialiced Epic EVO Expert",
         category: "Mountain",
-        price: "7500$", 
+        price: "7500", 
         stock: "10", 
         image:{
             src: 'EpicEvoExpert_ecomm.jpg',
@@ -75,7 +75,7 @@ const Products = [
         id: 7,
         name: "Canyon Neuron Young Hero",
         category: "Mountain",
-        price: "1999$", 
+        price: "1999", 
         stock: "10", 
         image:{
             src: 'NeuronYoungHero_ecomm.jpg',

@@ -8,7 +8,7 @@ const ItemDetailContainer = () => {
     const [item, setItem] = useState()
     const {id} = useParams()
 
-    const getProduct = () => new Promise ((res,rej) => setTimeout(() => res(Products.find(prod => prod.id == id)), 2000)) 
+    const getProduct = () => new Promise ((res,rej) => setTimeout(() => res(Products.find(prod => prod.id == id)), 1000)) 
     
     useEffect(() => {
         getProduct()
