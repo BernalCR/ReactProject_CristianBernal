@@ -9,7 +9,7 @@ const ItemCart = ({item}) => {
 
     return (
         <div className="itemCart_row display_flex j_c_space_between a_i_center">
-            <div className="imgCart"><img src={`../images/${image.src}`} alt={image.alt}/></div>
+            <div className="imgCart"><img src={image.src} alt={image.alt}/></div>
 
             <div className="info_itemCart">
                 <p>{name}</p>

@@ -14,7 +14,7 @@ const ItemDetail = ({item}) => {
 
     return (
         <div className="display_flex" id="ecommRow">
-            <div className="display_flex flex_center"><img src={`../images/${image.src}`} alt={image.alt} /></div>
+            <div className="display_flex flex_center"><img src={image.src} alt={image.alt} /></div>
 
             <div>
                 <h2>{name}</h2>
