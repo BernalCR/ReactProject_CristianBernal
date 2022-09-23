@@ -11,7 +11,6 @@ const ItemDetail = ({item}) => {
         addItem(item, cant);
     }
     
-
     return (
         <div className="display_flex" id="ecommRow">
             <div className="display_flex flex_center"><img src={image.src} alt={image.alt} /></div>

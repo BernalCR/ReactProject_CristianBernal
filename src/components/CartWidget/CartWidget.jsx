@@ -6,10 +6,13 @@ import { useContext } from "react";
 
 
 const CartWidget = () => {
-    const { cart } = useContext(CartContext);
+    const { getQuantity } = useContext(CartContext);
 
     return (
-        (cart.length > 0) && <Link to="/cart"><MdOutlineShoppingCart id="cartIcon"/></Link>  
+        <div id='cartIconBox' className='display_flex a_i_center'>
+            <Link to="/cart"><MdOutlineShoppingCart id="cartIcon"/></Link>
+            <p style={{color: "#fff"}}>{getQuantity()}</p>
+        </div>  
     );
 }
 

@@ -1,6 +1,10 @@
+#cartIconBox{
+    margin-right: 1rem;
+}
+
 #cartIcon{
     font-size: 1.3rem;
-    margin-right: 1rem;
+    margin-right: 0.5rem;
 }
 
 #cartIcon path:last-child{

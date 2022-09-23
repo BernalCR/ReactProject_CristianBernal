@@ -5,46 +5,44 @@ import ItemCart from "./ItemCart";
 import './Cart.css'
 
 const Cart = () => {
-    const { cart, clear } = useContext(CartContext);
+    const { cart, clear, getTotal } = useContext(CartContext);
 
-    let totalAmount = cart.reduce((acc, item) => acc + (item.price * item.cant), 0);
+    
 
     return (
         <div id="cartContainer">
             {
-            (cart.length) ? (
-            <>
-            <div className="display_flex j_c_space_between a_i_center">
-                <h1>Shopping Cart</h1>
-                <button onClick={clear}>CLEAR CART</button>
-            </div>
+                (cart.length) ? (
+                <>
+                <div className="display_flex j_c_space_between a_i_center">
+                    <h1>Shopping Cart</h1>
+                    <button onClick={clear}>CLEAR CART</button>
+                </div>
 
-            <hr/>
+                <hr/>
 
-            <div id="cartContent" className="display_flex j_c_space_between a_i_flex_start">
-                <div id="cartBox">
-                    <div className="itemCart_row display_flex j_c_space_between a_i_center">
-                        <div className="imgCart"></div>
-                        <div className="info_itemCart">Description</div>
-                        <div className="totalCost_item">Total</div>
+                <div id="cartContent" className="display_flex j_c_space_between a_i_flex_start">
+                    <div id="cartBox">
+                        <div className="itemCart_row display_flex j_c_space_between a_i_center">
+                            <div className="imgCart"></div>
+                            <div className="info_itemCart">Description</div>
+                            <div className="totalCost_item">Total</div>
+                        </div>
+                        {cart.map(item => <ItemCart key={item.id} item={item} />)}
                     </div>
-                    {cart.map(item => <ItemCart key={item.id} item={item} />)}
-                </div>
 
-                <div id="checkoutBox">
-                    <p>Subtotal: {totalAmount}$</p>
+                    <div id="checkoutBox">
+                        <p>Subtotal: {getTotal}$</p>
+                    </div>
                 </div>
-            </div>
-            </>
+                </>
 
-            ) : (
-                <div id="emptyCart" className="display_flex flex_center">
-                    <p>Your Cart is empty.</p>
-                    <Link to="/">Continue shopping.</Link>
-                </div>
-            )
-
-            
+                ) : (
+                    <div id="emptyCart" className="display_flex flex_center">
+                        <p>Your Cart is empty.</p>
+                        <Link to="/">Continue shopping.</Link>
+                    </div>
+                )
             }
         </div>
     );
