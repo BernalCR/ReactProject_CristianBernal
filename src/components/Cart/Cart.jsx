@@ -32,7 +32,8 @@ const Cart = () => {
                     </div>
 
                     <div id="checkoutBox">
-                        <p>Subtotal: {getTotal}$</p>
+                        <p>Subtotal: {getTotal()}$</p>
+                        <Link to="/checkout">Checkout</Link>
                     </div>
                 </div>
                 </>
