@@ -1,7 +1,7 @@
 
 #cartContainer{
     padding: 5%;
-    height: calc(100vh - 70px);
+    min-height: calc(100vh - 70px);
     background-color: #f6f6f6;
 }
 
@@ -59,3 +59,17 @@
 .totalCost_item{
     width: 20%;
 }
+
+@media (max-width: 700px) {
+    #cartContent{
+        flex-direction: column-reverse;
+    }
+
+    #cartContent > div{
+        width: 100%;
+    }
+    #checkoutBox{
+        margin-bottom: 15px;
+    }
+}
+    

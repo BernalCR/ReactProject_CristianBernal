@@ -7,8 +7,6 @@ import './Cart.css'
 const Cart = () => {
     const { cart, clear, getTotal } = useContext(CartContext);
 
-    
-
     return (
         <div id="cartContainer">
             {

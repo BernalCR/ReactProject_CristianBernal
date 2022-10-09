@@ -8,6 +8,7 @@ const ItemDetailContainer = () => {
     const [item, setItem] = useState()
     const {id} = useParams()
   
+    //Pedimos la informacion del producto a la base de datos y mientras no llegue muestra el loader
     useEffect(() => {
         getProduct(id).then(data => setItem(data))
     }, [])

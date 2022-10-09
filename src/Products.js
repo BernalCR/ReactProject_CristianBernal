@@ -2,9 +2,9 @@ const Products = [
     {
         id: 1,
         name: `Pinarello Prince Fx`,
-        category: "Road",
+        category: "road",
         price: "5000", 
-        stock: "10", 
+        stock: 10, 
         image:{
             src: 'https://firebasestorage.googleapis.com/v0/b/proyecto-react-8bb5f.appspot.com/o/PinarelloPrinceFx_ecomm.jpg?alt=media&token=32dce2aa-6e63-4be5-92c3-13b3a854f07a',
             alt: 'Pinarello Prince Fx bike'
@@ -14,9 +14,9 @@ const Products = [
     {
         id: 2,
         name: "Willier Triestina Montegrappa",
-        category: "Road",
+        category: "road",
         price: "1300", 
-        stock: "10", 
+        stock: 10, 
         image:{
             src: 'https://firebasestorage.googleapis.com/v0/b/proyecto-react-8bb5f.appspot.com/o/montegrappa_ecomm.jpg?alt=media&token=242490ce-37d3-46a9-92a4-c8ca56dcf452',
             alt: 'Willier Triestina Montegrappa bike'
@@ -26,9 +26,9 @@ const Products = [
     {
         id: 3,
         name: "Specialiced Roubaix",
-        category: "Road",
+        category: "road",
         price: "3000", 
-        stock: "10", 
+        stock: 10, 
         image:{
             src: 'https://firebasestorage.googleapis.com/v0/b/proyecto-react-8bb5f.appspot.com/o/Roubaix_ecomm.jpg?alt=media&token=09a0bd2e-9519-4b3c-9a76-0ca44e6dba22',
             alt: 'Specialiced Roubaix bike'
@@ -38,9 +38,9 @@ const Products = [
     {
         id: 4,
         name: "Specialiced Allez Sport",
-        category: "Road",
+        category: "road",
         price: "1500", 
-        stock: "10", 
+        stock: 10, 
         image:{
             src: 'https://firebasestorage.googleapis.com/v0/b/proyecto-react-8bb5f.appspot.com/o/AllezSport_ecomm.jpg?alt=media&token=5a8d45ef-e637-485b-8575-b07d8e0c1e37',
             alt: 'Specialiced Allez Sport bike'
@@ -50,9 +50,9 @@ const Products = [
     {
         id: 5,
         name: "Cliff Rock 3.0",
-        category: "Mountain",
+        category: "mountain",
         price: "1000", 
-        stock: "10", 
+        stock: 10, 
         image:{
             src: 'https://firebasestorage.googleapis.com/v0/b/proyecto-react-8bb5f.appspot.com/o/rock-3_ecomm.jpg?alt=media&token=0d553ca9-e395-49ac-8fad-0d5c5866a92f',
             alt: 'Cliff Rock 3.0 bike'
@@ -62,9 +62,9 @@ const Products = [
     {
         id: 6,
         name: "Specialiced Epic EVO Expert",
-        category: "Mountain",
+        category: "mountain",
         price: "7500", 
-        stock: "10", 
+        stock: 10, 
         image:{
             src: 'https://firebasestorage.googleapis.com/v0/b/proyecto-react-8bb5f.appspot.com/o/EpicEvoExpert_ecomm.jpg?alt=media&token=3f3c21d8-ad8f-4347-891d-2df44c4cc89a',
             alt: 'Specialiced Epic EVO Expert bike'
@@ -74,9 +74,9 @@ const Products = [
     {
         id: 7,
         name: "Canyon Neuron Young Hero",
-        category: "Mountain",
+        category: "mountain",
         price: "1999", 
-        stock: "10", 
+        stock: 10, 
         image:{
             src: 'https://firebasestorage.googleapis.com/v0/b/proyecto-react-8bb5f.appspot.com/o/NeuronYoungHero_ecomm.jpg?alt=media&token=7026d79a-6830-4470-97af-84935c14a4b1',
             alt: 'Canyon Neuron Young Hero bike'

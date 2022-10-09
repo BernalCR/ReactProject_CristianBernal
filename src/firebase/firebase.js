@@ -1,6 +1,6 @@
 
 import { initializeApp } from "firebase/app";
-import { collection, addDoc, getDocs, doc, getDoc, getFirestore, query, where } from "firebase/firestore";
+import { collection, addDoc, getDocs, doc, getDoc, updateDoc, getFirestore, query, where } from "firebase/firestore";
 import Products from "../Products";
 
 const firebaseConfig = {
@@ -17,6 +17,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app)
 
+//Funcion para la primera vez que se cargan los productos a la base de datos
 async function cargarBaseDeDatos  () {
   new Promise ((res,rej) => {res(Products)})
   .then(data => {
@@ -37,6 +38,7 @@ async function cargarBaseDeDatos  () {
   .catch(error => console.error(error))
 }
 
+//Obtener un grupo de productos de la base de datos
 const getProducts = async (category) => {
   try {
     const document = category ? query(collection(db, "products"), where("category", "==", category))
@@ -50,6 +52,7 @@ const getProducts = async (category) => {
   }
 }
 
+//Obtener un producto de la base de datos
 const getProduct = async (idItem) => {
   try {
       const document = doc(db, "products", idItem)
@@ -61,4 +64,21 @@ const getProduct = async (idItem) => {
   }
 }
 
-export {db,app, cargarBaseDeDatos, getProducts, getProduct}
+//Actualizar al stock en la base de datos
+const updateStock = async (item) => {
+  const product = doc(db, 'products', item.id);
+
+  await updateDoc(product, {
+    stock: item.stock - item.cant,
+  });
+};
+
+
+
+export {db,app, cargarBaseDeDatos, getProducts, getProduct, updateStock}
+
+
+
+
+
+

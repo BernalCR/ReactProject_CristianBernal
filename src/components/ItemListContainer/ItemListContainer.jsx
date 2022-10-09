@@ -8,11 +8,12 @@ const ItemListContainer = () => {
     const [prodList, setProdList] = useState([]); 
     const {category} = useParams(); 
     
+    //Se pide la informacion de un grupo de productos a la base de datos (si no se filtro por alguna categoria los trae todos)
     useEffect(() => {
         getProducts(category).then(data => setProdList(data))
         return () =>{setProdList([])}
+        
     }, [category]);
-    
 
     return (prodList.length ? <ItemList prodList={prodList} /> : <Loader/>)
 }

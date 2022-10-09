@@ -1,4 +1,17 @@
+#CheckoutContainer{
+    padding: 2em 1em;
+}
+
+#checkoutForm{
+    margin-top: 15px;
+}
+
 #checkoutForm input{
     display: block;
     margin-bottom: 15px;
+}
+
+.wait{
+    opacity: 0.5;
+    cursor: wait;
 }

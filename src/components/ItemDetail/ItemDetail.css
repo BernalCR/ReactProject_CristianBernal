@@ -2,6 +2,8 @@
     width: 90%;
     margin: auto;
     margin-top: 5rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
 }
 
 #ecommRow > div{
@@ -30,4 +32,15 @@
 
 .shopBtn:hover{
     background-color: #535353;
+}
+
+
+@media (max-width: 700px) {
+    #ecommRow > div{
+        width: 100%;
+    }
+
+    #ecommRow > div:first-child{
+        margin-bottom: 30px;
+    }
 }

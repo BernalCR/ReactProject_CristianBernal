@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 const Item = ({product}) => {
     
+    //Este componente recibe items del mapeo que ocurre en ItemList y los va imprimiendo
     const {id, name, category, price, stock, image} = product;
     return (
         <div className="card_product" id={id}>
